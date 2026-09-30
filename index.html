@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Письмо с извинениями · Николь</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Marcellus&family=Caveat:wght@400;600;700&family=Special+Elite&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scene" id="scene">
+    <!-- Фоновое свечение -->
+    <div class="ambient-light" aria-hidden="true"></div>
+    <!-- Плавающие частицы -->
+    <div class="particles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span>
+    </div>
+
+    <!-- Конверт -->
+    <div class="envelope-wrapper" id="envelopeWrapper">
+      <div class="envelope">
+        <div class="envelope-back"></div>
+        <div class="envelope-side left"></div>
+        <div class="envelope-side right"></div>
+        <div class="envelope-bottom"></div>
+        <div class="flap">
+          <div class="flap-shine"></div>
+        </div>
+        <div class="seal">
+          <div class="seal-ring"></div>
+          <div class="seal-ring ring-2"></div>
+          <span class="seal-inner">Я&Н</span>
+        </div>
+        <div class="address">
+          <span class="to">Кому: Николь</span>
+          <span class="from">От: Ярика</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Письмо-свиток -->
+    <div class="letter-scroll" id="letter">
+      <div class="scroll-rod top">
+        <div class="rod-cap left"></div>
+        <div class="rod-cap right"></div>
+      </div>
+
+      <div class="letter-paper" id="letterPaper">
+        <div class="paper-texture"></div>
+        <div class="paper-edge top"></div>
+        <div class="paper-edge bottom"></div>
+
+        <div class="letter-inner">
+          <div class="letter-header">
+            <div class="header-line">30 сентября 2026 г.</div>
+            <div class="header-line">Кому: Николь</div>
+            <div class="header-line">От: Ярика</div>
+            <div class="divider"></div>
+          </div>
+
+          <div class="letter-title">
+            <span class="title-text" id="titleText">Уважаемая Николь,</span>
+          </div>
+
+          <div class="letter-body" id="letterBody"></div>
+
+          <div class="letter-signature" id="letterSignature">
+            <div class="line"></div>
+            <div class="name">С уважением, Ярик</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-rod bottom">
+        <div class="rod-cap left"></div>
+        <div class="rod-cap right"></div>
+      </div>
+    </div>
+
+    <!-- Кнопки -->
+    <button class="btn-open" id="openBtn">
+      <span class="btn-bg"></span>
+      <span class="btn-text">Открыть письмо</span>
+      <span class="btn-arrow">→</span>
+    </button>
+    <button class="btn-close" id="closeBtn">
+      <span class="close-icon">×</span>
+      <span class="close-text">Свернуть</span>
+    </button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
